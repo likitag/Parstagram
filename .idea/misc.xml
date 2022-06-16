@@ -3,11 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/gradient.xml" value="0.128" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/launch_screen.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/splash_background.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_feed.xml" value="0.27853260869565216" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.27853260869565216" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.27853260869565216" />
+        <entry key="app/src/main/res/layout/activity_post_details.xml" value="0.21875" />
+        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.29936594202898553" />
+        <entry key="app/src/main/res/layout/activity_signup.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.16742654508611957" />
+        <entry key="app/src/main/res/layout/activity_splashscreen.xml" value="0.15982776089159068" />
+        <entry key="app/src/main/res/layout/fragment_compose.xml" value="0.29936594202898553" />
+        <entry key="app/src/main/res/layout/fragment_posts.xml" value="0.29936594202898553" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.29936594202898553" />
         <entry key="app/src/main/res/layout/item_post.xml" value="0.27853260869565216" />
+        <entry key="app/src/main/res/menu/menu_bottom_navigation.xml" value="0.27291666666666664" />
+        <entry key="app/src/main/res/menu/menu_main.xml" value="0.2104348076714409" />
       </map>
     </option>
   </component>

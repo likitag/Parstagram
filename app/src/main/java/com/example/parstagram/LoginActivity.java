@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.parse.LogInCallback;
 import com.parse.ParseException;
 import com.parse.ParseUser;
+import com.parse.SignUpCallback;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -21,6 +22,8 @@ public class LoginActivity extends AppCompatActivity {
     private EditText etUsername;
     private EditText etPassword;
     private Button btnLogin;
+    private Button btnSignup;
+    //private EditText etEmail;
 
 
 
@@ -31,9 +34,47 @@ public class LoginActivity extends AppCompatActivity {
         if(ParseUser.getCurrentUser()!=null){
             goMainActivity();
         }
+
         etUsername = findViewById(R.id.etUsername);
         etPassword = findViewById(R.id.etPassword);
+        //etEmail = findViewById(R.id.etEmail);
         btnLogin = findViewById(R.id.btnLogin);
+        btnSignup = findViewById(R.id.btnSignup);
+
+        btnSignup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(LoginActivity.this, SignupActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
+
+//        btnSignUp.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Log.i(TAG, "onClick sign up button");
+//                ParseUser user = new ParseUser();
+//                user.setUsername(etUsername.getText().toString());
+//                user.setPassword(etPassword.getText().toString());
+//                user.setEmail(etEmail.getText().toString());
+//                user.signUpInBackground(new SignUpCallback() {
+//                    @Override
+//                    public void done(ParseException e) {
+//                        if (e != null) {
+//                            loginUser(etUsername.getText().toString(), etPassword.getText().toString());
+//                            // Hooray! Let them use the app now.
+//                        } else {
+//                            Log.e(TAG, "login didnt work", e);
+//                            // Sign up didn't succeed. Look at the ParseException
+//                            // to figure out what went wrong
+//                        }
+//
+//
+//                    }
+//                });
+//            }
+//        });
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override

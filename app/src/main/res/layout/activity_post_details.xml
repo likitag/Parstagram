@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    android:layout_marginStart="10dp"
     android:orientation="vertical">
 
     <TextView
         android:id="@+id/tvUsername"
-        android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="hey"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         tools:text="rahul" />
 
@@ -21,7 +19,6 @@
         android:id="@+id/ivImage"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:layout_below="@id/tvUsername"
         android:scaleType="centerCrop"
         tools:srcCompat="@tools:sample/avatars" />
 
@@ -29,17 +26,12 @@
         android:id="@+id/tvDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/ivImage"
-        android:layout_marginStart="5dp"
         android:layout_marginBottom="8dp"
-        android:layout_toEndOf="@id/tvUsername2"
         tools:text="trying to look hipster" />
 
     <TextView
-        android:id="@+id/tvUsername2"
-        android:textStyle="bold"
-        android:layout_width="wrap_content"
+        android:id="@+id/tvTimestamp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/ivImage"
-        android:text="Username" />
-</RelativeLayout>
+        android:text="time stamp" />
+</LinearLayout>
