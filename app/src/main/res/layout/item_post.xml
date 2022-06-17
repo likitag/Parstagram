@@ -10,18 +10,27 @@
 
     <TextView
         android:id="@+id/tvUsername"
-        android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/ivProfilePic"
         android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
         tools:text="rahul" />
+
+    <ImageView
+        android:id="@+id/ivProfilePic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <ImageView
         android:id="@+id/ivImage"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:layout_below="@id/tvUsername"
+        android:layout_below="@id/ivProfilePic"
+        android:layout_marginTop="10dp"
         android:scaleType="centerCrop"
         tools:srcCompat="@tools:sample/avatars" />
 
@@ -29,7 +38,7 @@
         android:id="@+id/tvDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/ivImage"
+        android:layout_below="@id/btnFavorite"
         android:layout_marginStart="5dp"
         android:layout_marginBottom="8dp"
         android:layout_toEndOf="@id/tvUsername2"
@@ -37,9 +46,27 @@
 
     <TextView
         android:id="@+id/tvUsername2"
-        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnFavorite"
+        android:text="Username"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/btnFavorite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/ivImage"
-        android:text="Username" />
+        android:background="@null"
+        app:srcCompat="@drawable/ic_baseline_favorite_border_24" />
+
+    <ImageButton
+        android:id="@+id/btnComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivImage"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/btnFavorite"
+        android:background="@null"
+        app:srcCompat="@drawable/ic_baseline_add_comment_24" />
 </RelativeLayout>

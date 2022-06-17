@@ -20,6 +20,7 @@ public class PostDetailsActivity extends AppCompatActivity {
     ImageView ivImage;
     TextView tvTimestamp;
     TextView tvUsername2;
+    ImageView ivProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,7 @@ public class PostDetailsActivity extends AppCompatActivity {
         tvDescription = (TextView) findViewById(R.id.tvDescription);
         ivImage = (ImageView) findViewById(R.id.ivImage);
         tvTimestamp = (TextView) findViewById(R.id.tvTimestamp);
+        ivProfile = (ImageView) findViewById(R.id.ivProfilePic);
       //  tvUsername2 = (TextView) findViewById(R.id.tvUsername2);
 
         post = (Post) Parcels.unwrap(getIntent().getParcelableExtra(Post.class.getSimpleName()));
@@ -41,6 +43,14 @@ public class PostDetailsActivity extends AppCompatActivity {
         tvTimestamp.setText(timeAgo);
 
         ParseFile image = post.getImage();
+
+        ParseFile profile = post.getUser().getParseFile("profile");
+
+        if (profile != null) {
+            Glide.with(this).load(profile.getUrl()).circleCrop().into(ivProfile);
+
+        }
+
 
         if (image != null) {
             Glide.with(this).load(image.getUrl()).into(ivImage);

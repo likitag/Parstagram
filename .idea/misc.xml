@@ -5,6 +5,7 @@
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/gradient.xml" value="0.128" />
+        <entry key="app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.2715" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/launch_screen.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/splash_background.xml" value="0.1" />
@@ -20,6 +21,8 @@
         <entry key="app/src/main/res/layout/fragment_posts.xml" value="0.29936594202898553" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.29936594202898553" />
         <entry key="app/src/main/res/layout/item_post.xml" value="0.27853260869565216" />
+        <entry key="app/src/main/res/layout/item_profile.xml" value="0.28940217391304346" />
+        <entry key="app/src/main/res/layout/item_profile_posts.xml" value="0.29936594202898553" />
         <entry key="app/src/main/res/menu/menu_bottom_navigation.xml" value="0.27291666666666664" />
         <entry key="app/src/main/res/menu/menu_main.xml" value="0.2104348076714409" />
       </map>
